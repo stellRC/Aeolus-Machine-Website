@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Again</title>
-    <link rel="stylesheet" href="amw.css">
-    <script src="amw.js" defer></script>
+    <title>Aeolus Machine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,10 +38,9 @@
                         </ul>
                     </div>
                     <button class="button__gallery">
-                        <a href="#gallery">Gallery</a>
+                        <a href="gallery.html">Gallery</a>
                     </button>
                     </div>
-                   
                 </section>
                 <section class="svg__container">      
                     <svg class="svg" id="triangleCircle" viewBox="0.0 0.0 500.000 800.000" version="1.1">
@@ -60,7 +59,7 @@
                     </svg>
                     
                 </section>
-                <div class="hero--mobile">
+            <div class="hero--mobile">
                 <header class="heading--content mobile">
                     <h2 class="mobile--heading--top">A Job Shop</h2>
                 </header>
@@ -68,33 +67,51 @@
                     <p>Founded in 1984 by Floyd Fronius, Aeolus Machine produces prototype machines and parts for inventors and industry.</p>
                 </section>
                 <button class="button__gallery">
-                    <a href="#gallery">Gallery</a>
+                    <a href="gallery.html">Gallery</a>
                 </button>
             </div>
             </section>
             </section>
         </section>
-        <!-- <section class="panel panel2" id="about">
-            <header class="heading--content mobile">
-                <h2 class="mobile--heading">A Job Shop</h2>
-            </header>
-            <section class="shop__about--mobile">
-                <p>Founded in 1984 by Floyd Fronius, Aeolus Machine produces prototype machines and parts for inventors and industry.</p>
-                    <div class="hero--bottom--mobile">
-                        <h3>Capabilities</h3>
-                        <ul class="hero--list--mobile">
-                            <li>CNC Machining</li>
-                            <li>Engineering</li>
-                            <li>Prototyping</li>
-                            <li>Consulting</li>
-                        </ul>
-                        
+        <section class="scrollTop">
+            <button id="scrollToTopBtn">&#8679;</button>
+        <section class="paenl panel2" id="gallery">
+            <div class="container">
+               
+                <div class="heading--content">
+                    <h2>Parts Gallery</h2>
+                    <div class="gallery--more">
+                        <button class="btn--gallery--more" >
+                            <a href="gallery.html">Full Gallery</a>
+                        </button>
                     </div>
-                    <button class="button__gallery">
-                        <a href="#gallery">Gallery</a>
-                    </button>
-            </section>
-        </section> -->
+                </div>
+                <div class="gallery-grid">
+                    <div class="card stacked featured">
+                        <img loading="lazy" class="card__img" src="img/current/CO2measure.jpg" alt="Parts">
+                    </div>
+                    <div class="card stacked">
+                        <img loading="lazy" class="card__img" src="img/current/009_7.jpg" alt="Parts"> 
+                    </div>
+                    <div class="card stacked">
+                        <img loading="lazy" class="card__img" src="img/current/img__1.jpeg" alt="Parts">
+                    </div>
+                    <div class="card stacked">
+                        <img loading="lazy" class="card__img" src="img/current/img__2.jpeg" alt="Parts">
+                    </div>
+                    <div class="card stacked">
+                        <img loading="lazy" class="card__img" src="img/current/c.jpg" alt="Parts">
+                    </div>
+                    <div class="card stacked last">
+                        <img loading="lazy" class="card__img" src="img/current/img__3.jpeg" alt="Parts">
+                    </div>
+                    <div class="card stacked final">
+                        <img loading="lazy" class="card__img" src="img/current/img__4.jpeg" alt="Parts">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
         <section class="paenl panel3" id="contact">
             <header class="heading--content">
                 <h2>Contact</h2>
@@ -102,13 +119,13 @@
             <section class="email__form--container">
                 <form action="https://formsubmit.co/aeolusmachine@gmail.com" enctype="multipart/form-data" method="POST" id="contact-form" class="contact__form" role="form">
                     <label for="Email"></label>
-                    <input type="hidden" name="_next" value="http://www.aeolusmachine.net//thankyou.html">
+                    <input type="hidden" name="_next" value="http://www.aeolusmachine.net/thankyou.html">
                     <input type="hidden" name="_template" value="box">
                     <input type="text" class="form-control" id="name" name="name" value="" placeholder="NAME" required>
                     <input type="email" class="form-control" id="email" name="email" value="" placeholder="EMAIL" required>
-                    <!-- <input type="file" name="attachment" accept="image/png, image/jpeg"> -->
+                    <input type="file" name="attachment" accept="image/png, image/jpeg">
                     <input type="hidden" name="_subject" value="Message to Aeolus Machine">
-                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="MESSAGE" required></textarea>
+                    <textarea class="form-control" name="message" id="message" rows="3" placeholder="MESSAGE" required></textarea>
                     <button class="btn btn-send" id="submit" type="submit" value="SEND">
                         <div class="alt-send-button">
                             <i class="icon--plane">&#9993;</i><span class="send-text">SEND</span>
@@ -129,95 +146,13 @@
                             </li>
                         </div>
                         <button class="button__gallery button__gallery--contact">
-                            <a href="#gallery">Gallery</a>
+                            <a href="gallery.html">Gallery</a>
                         </button>
                     </ul>
                 </aside>
             </section>
         </section>
-        <section class="paenl panel4" id="gallery">
-            <div class="container">
-                <button id="scrollToTopBtn">&#8679;</button>
-                <div class="heading--content">
-                    <h2>Parts Gallery</h2>
-                </div>
-                <div class="gallery-grid">
-                    <div class="card stacked featured">
-                        <img loading="lazy" class="card__img" src="img/current/CO2measure.jpg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/009_7.jpg" alt="Parts"> 
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/img__1.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/img__2.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/c.jpg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/img__3.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/img__4.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/img__5.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_0139.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_0197.jpg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_0202.jpg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_0214.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_0852.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_0953.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_0955.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_8353.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_8437.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_8500.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_9662.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/IMG_9831.jpeg" alt="Parts">
-                    </div>
-                    <div class="card stacked">
-                        <img loading="lazy" class="card__img" src="img/current/parts.jpg" alt="Parts">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <h2>Aeolus Machine</h2>
-            <nav>
-                <ul class="nav--list">
-                    <li><a href="#top">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                </ul>
-            </nav>
-        </footer>
+    </section>
     </main>
     
 </body>
